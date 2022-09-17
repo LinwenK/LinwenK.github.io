@@ -61,12 +61,12 @@
         <div id="aboutme">
             <div class="introduction">
                 <figure class="intro-photo">
-                    <img src="./img/about.png" alt="left photo">
+                    <img src="./img/about.png" alt="photo">
                 </figure>   
                 <article class="intro-word">
-                    <h1>A junior web developer</h1>
+                    <h1>A junior <span>web developer</span></h1>
                     <p>
-                        with in-depth knowledge of data analysis
+                        with in-depth knowledge of <span>data analysis</span>
                     </p> 
 
                 </article>
@@ -74,12 +74,99 @@
             
                 
 
+            <div id="skill">
+                <!-- <h2>
+                    Skills
+                </h2> -->
+                    <div class="mainskill">
+                        <div class="skill-video">
+                            <video id = "main" autoplay loop muted>
+                                <source src="./img/mainskill.mp4" type="video/mp4">
+                            </video>
+            
+                        </div>
+                        <div class="skill-content">
+                            <h3>
+                                Main Skills
+                            </h3>
+                            <div>
+                                    <li class="list-group-item">Web Development</li>
+                                    <li class="list-group-item">Statistical Algorithm</li>
+                                    <li class="list-group-item">Data Analysis</li>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+                    <div class="proskill">
+                        <div class="skill-video">
+                            <figure id="pro">
+                                <img src="./img/proskill.png" alt="pro">
+                            </figure>  
+            
+                        </div>
 
+                        <div class="skill-content">
+                            <h3>
+                                Professional Skills
+                            </h3>
+                        <!-- <div class="bar">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML 90%</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">CSS 85%</div>
+                            </div>
+                            <br>
+    
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">SCSS 80%</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Bootstrap 75%</div>
+                            </div>
+                            <br>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Flexbox 85%</div>
+                            </div>
+    
+                        </div> -->
+                        </div>
+    
+                    </div>
+
+                    <div class="softskill">
+                        <div class="skill-video">
+                            <figure id="soft">
+                                <img src="./img/soft.png" alt="soft">
+                            </figure>  
+            
+                        </div>
+
+                        <div class="skill-content">
+                            <h3>
+                                Soft Skills
+                            </h3>
+                            <div>
+                                    <li class="list-group-item">Positive</li>
+                                    <li class="list-group-item">Creativity</li>
+                                    <li class="list-group-item">Teamwork</li>
+                                    <!-- <p>
+                                        Love working closely with team members to compete every tasks. 
+                                        Always think creatively, easily have new idea and find the better solution in different way to solve problem.
+                                    </p> -->
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+            </div>
 
        <!-- <div id="education"> -->
-            <div>
-                <i class="fa-solid fa-user-graduate"></i>
-                <aside>
+            <div class="education">
+                <!-- <aside>
                     <h3>
                         Education
                     </h3>
@@ -87,229 +174,133 @@
                         <li>Now : Diploma of Web developer</li>
                         <li>Bachelor of Applied Statistics</li>
                     </ul>
-                </aside>
-            </div>
+                </aside> -->
             
-            <h2>
-                Education
-            </h2>
-            <article>
-                <div class="educationcard" style="width: 18rem;">
-                    <img src="/img/tamwood.jpeg" class="card-img-top" alt="Tamwood">
-                    <div class="card-body">
-                        <h3 class="card-title">Tamwood Career College</h3>
-                        <p class="card-text">
-                            Work and Study Diploma of Web Developer Program<br><br>
-                            I am currently an international student at Tamwood now. 
-                            Learn how to build a dynamic websites using HTML, CSS, and JavaScript.
-                        </p>
+                <figure id="school">
+                    <img src="./img/school.png" alt="school">
+                </figure>  
+                <article>
+                    <div class="educationcard" >
+                        
+                            <h3 class="card-title">Tamwood Career College</h3>
+                            <span>                                                            Work and Study Diploma of Web Developer Program
+                            </span>
+
+                            <p class="card-text">
+                                I am currently an international student at Tamwood now. 
+                                Learn how to build a dynamic websites using HTML, CSS, JavaScript and PHP
+                            </p>
+                        
                     </div>
                     
-                    <a href="https://tamwood.com/careers/" class="card-link">Schoool website</a>
-
-                </div>
-                
-                <div class="educationcard" style="width: 18rem;">
-                    <img src="/img/fju.jpeg" class="card-img-top" alt="FJU">
-                    <div class="card-body">
-                        <h3 class="card-title">Fu Jen Catholic University</h3>
-                        <p class="card-text">
-                            Bachelor of Applied Statistics Department<br><br>
-                            Know how to produce final statistics logical result and analize customer data using algorithm and statistic skill.
-                        </p>
+                    <div class="educationcard" >
+                       
+                            <h3 class="card-title">Fu Jen Catholic University</h3>
+                            <span>Bachelor of Applied Statistics Department</span>
+                            <p class="card-text">
+                                Know how to produce final statistics logical result and analize customer data using algorithm and statistic skill.
+                            </p>
+                        
                     </div>
-                    
-                    <a href="https://www.fju.edu.tw/indexEN.jsp" class="card-link">Schoool website</a>
+                </article>
+            </div>
 
-                </div>
-            </article>
 
 
        <!-- <div id="job"> -->
-            <div>
-                <i class="fa-solid fa-briefcase"></i>
-                <aside>
-                    <h3>
-                        Work Experience
-                    </h3>
-                    <ul>
-                        <li>Data analyst for 5 years in Taiwan</li>
-                        <li>Server for 1 year in Canada</li>
-                    </ul>
-                </aside>
+            <div class="job">
+                
+                <figure id="job">
+                    <img src="./img/job4.png" alt="job">
+                </figure> 
+                <article>
+
+                        <h3>Data analyst for 5 years in Taiwan</li>
+                </article>
+
                 
             </div>
 
-   <!-- <div id="skill"> -->
-            <h2>
-                Skills
-            </h2>
-            <article>
-                <div class="mainskill">
-                    <h3>
-                        Main Skills
-                    </h3>
-                    <div class="card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Statistical Algorithm</li>
-                        <li class="list-group-item">Data Analysis</li>
-                        <li class="list-group-item">Web Development</li>
-                        </ul>
-                    </div>
+   
 
-                </div>
-                <div class="softskill">
-                    <h3>
-                        Soft Skills
-                    </h3>
-                    <div class="card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Creativity</li>
-                        <li class="list-group-item">Teamwork</li>
-                        <li class="list-group-item">Time management</li>
-                        </ul>
-                    </div>
 
-                </div>
-                <div class="professional">
-                    <h3>
-                        Professional Skills
-                    </h3>
-                    <div class="bar">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML 90%</div>
-                        </div>
-                        <br>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">CSS 85%</div>
-                        </div>
-                        <br>
-
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">SCSS 80%</div>
-                        </div>
-                        <br>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Bootstrap 75%</div>
-                        </div>
-                        <br>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Flexbox 85%</div>
-                        </div>
-
-                    </div>
-                    
-
-                </div>
-                
-            </article>
-
-            <div>
-                <i class="fa-solid fa-people-group"></i>
-                <aside>
-                    <h3>
-                        Work with team
-                    </h3>
-                    <p>
-                        Love working closely with team members to compete every tasks. 
-                        Always think creatively, easily have new idea and find the better solution in different way to solve problem.
-                    </p>
-
-                </aside>
-                
-            </div>
-            <div>
-                <i class="fa-solid fa-star"></i>
-                <aside>
-                    <h3>
-                        Future Goal
-                    </h3>
-                    <p>
-                        Be a motivated and productive web-developer. 
-                        Learn more programing skill, web structures, and search engine optimization knowledge.
-                    </p>
-                </aside>
+            <div id="resume">
+                <article>
+                    <h2>
+                        Download Resume
+                    </h2>
+                    <a href="/img/about.png" download="about.png">
+                        Download
+                        <!-- <img src="/img/about.png" alt="Download"> -->
+                      </a>
+                </article>
             </div>
 
-
-
-<!-- <div id="resume"> -->
-            <article>
+            <div id="project">
                 <h2>
-                    Download Resume
+                    My Projects
                 </h2>
-                <spam>A web developer</spam>
-                <p>
-                    with in-depth knowledge of data analysis
-                </p>
-            </article>
+                <article>
+                    <div>
+                        <h3>
+                            Project 1
+                        </h3>
+                        <aside></aside>
+                        <div>
+                            <spam>Go to Github</spam>
+                            <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                        </div>
+                        
+                        <p>
+                            Learn how to use SCSS to enhance the CSS more fumular and structurful.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>
+                            Project 2
+                        </h3>
+                        <aside></aside>
+                        <div>
+                            <spam>Go to Github</spam>
+                            <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                        </div>
+                        <p>
+                            Learn how to set git environment and learn how to use Github to track the code.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>
+                            Project 3
+                        </h3>
+                        <aside></aside>
+                        <div>
+                            <spam>Go to Github</spam>
+                            <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                        </div>
+                        <p>
+                            Learn how to creave multi-device layout using SCSS.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>
+                            Project 4
+                        </h3>
+                        <aside></aside>
+                        <div>
+                            <spam>Go to Github</spam>
+                            <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                        </div>
+                        <p>
+                            Learn how to use bootstrap and awesome icon correctly in html
+                        </p>
+                    </div>
+                </article>
+            </div>
         </div>
 
-        <div id="project">
-            <h2>
-                My Projects
-            </h2>
-            <article>
-                <div>
-                    <h3>
-                        Project 1
-                    </h3>
-                    <aside></aside>
-                    <div>
-                        <spam>Go to Github</spam>
-                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
-                    </div>
-                    
-                    <p>
-                        Learn how to use SCSS to enhance the CSS more fumular and structurful.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Project 2
-                    </h3>
-                    <aside></aside>
-                    <div>
-                        <spam>Go to Github</spam>
-                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
-                    </div>
-                    <p>
-                        Learn how to set git environment and learn how to use Github to track the code.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Project 3
-                    </h3>
-                    <aside></aside>
-                    <div>
-                        <spam>Go to Github</spam>
-                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
-                    </div>
-                    <p>
-                        Learn how to creave multi-device layout using SCSS.
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Project 4
-                    </h3>
-                    <aside></aside>
-                    <div>
-                        <spam>Go to Github</spam>
-                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
-                    </div>
-                    <p>
-                        Learn how to use bootstrap and awesome icon correctly in html
-                    </p>
-                </div>
-            </article>
-        </div>
-
-
-        
 
     </main>
+
     <footer id="contact">
         <article>
             <div>
