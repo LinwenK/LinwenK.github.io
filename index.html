@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500;700&family=Comfortaa:wght@500&family=Courgette&family=Kalam&family=Lavishly+Yours&family=Parisienne&family=Roboto+Mono&family=Sacramento&family=Ultra&family=Viga&display=swap" rel="stylesheet">
+        
+    <script src="./jquery-3.6.0.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <title>Linwen's Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutme" onclick="showA();">Who is Linwen</a></li>
+                <li><a href="#project" onclick="showP();">My project</a></li>
+
+                <!-- <li><a href="#job">Job</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#media">social media profiles</a></li>
+                <li><a href="#award">Awards/special recognition</a></li> -->
+                <!-- <li><a href="#resume">Download</a></li> -->
+                <li><a href="#contact">Contact me!</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- HOME SECTION -->
+        <div id="home">
+
+            <video autoplay loop muted class="v-header">
+                <source src="./img/hiking2.mp4" type="video/mp4">
+            </video>
+
+            <!-- <div id="playbtn">
+                <a id="gotolevel" href="#" onclick="showlevel();"></a>
+            </div>
+
+            <div id="member">
+                <span>April / Emma / Linwen <br> Matheus / Mamiko</span>
+            </div> -->
+
+        </div>
+        <!-- HOME SECTION END -->
+
+
+        
+        <div id="aboutme">
+            <div class="introduction">
+                <figure class="intro-photo">
+                    <img src="./img/about.png" alt="left photo">
+                </figure>   
+                <article class="intro-word">
+                    <h1>A junior web developer</h1>
+                    <p>
+                        with in-depth knowledge of data analysis
+                    </p> 
+
+                </article>
+            </div>
+            
+                
+
+
+
+       <!-- <div id="education"> -->
+            <div>
+                <i class="fa-solid fa-user-graduate"></i>
+                <aside>
+                    <h3>
+                        Education
+                    </h3>
+                    <ul>
+                        <li>Now : Diploma of Web developer</li>
+                        <li>Bachelor of Applied Statistics</li>
+                    </ul>
+                </aside>
+            </div>
+            
+            <h2>
+                Education
+            </h2>
+            <article>
+                <div class="educationcard" style="width: 18rem;">
+                    <img src="/img/tamwood.jpeg" class="card-img-top" alt="Tamwood">
+                    <div class="card-body">
+                        <h3 class="card-title">Tamwood Career College</h3>
+                        <p class="card-text">
+                            Work and Study Diploma of Web Developer Program<br><br>
+                            I am currently an international student at Tamwood now. 
+                            Learn how to build a dynamic websites using HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+                    
+                    <a href="https://tamwood.com/careers/" class="card-link">Schoool website</a>
+
+                </div>
+                
+                <div class="educationcard" style="width: 18rem;">
+                    <img src="/img/fju.jpeg" class="card-img-top" alt="FJU">
+                    <div class="card-body">
+                        <h3 class="card-title">Fu Jen Catholic University</h3>
+                        <p class="card-text">
+                            Bachelor of Applied Statistics Department<br><br>
+                            Know how to produce final statistics logical result and analize customer data using algorithm and statistic skill.
+                        </p>
+                    </div>
+                    
+                    <a href="https://www.fju.edu.tw/indexEN.jsp" class="card-link">Schoool website</a>
+
+                </div>
+            </article>
+
+
+       <!-- <div id="job"> -->
+            <div>
+                <i class="fa-solid fa-briefcase"></i>
+                <aside>
+                    <h3>
+                        Work Experience
+                    </h3>
+                    <ul>
+                        <li>Data analyst for 5 years in Taiwan</li>
+                        <li>Server for 1 year in Canada</li>
+                    </ul>
+                </aside>
+                
+            </div>
+
+   <!-- <div id="skill"> -->
+            <h2>
+                Skills
+            </h2>
+            <article>
+                <div class="mainskill">
+                    <h3>
+                        Main Skills
+                    </h3>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Statistical Algorithm</li>
+                        <li class="list-group-item">Data Analysis</li>
+                        <li class="list-group-item">Web Development</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="softskill">
+                    <h3>
+                        Soft Skills
+                    </h3>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Creativity</li>
+                        <li class="list-group-item">Teamwork</li>
+                        <li class="list-group-item">Time management</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="professional">
+                    <h3>
+                        Professional Skills
+                    </h3>
+                    <div class="bar">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">HTML 90%</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">CSS 85%</div>
+                        </div>
+                        <br>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">SCSS 80%</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Bootstrap 75%</div>
+                        </div>
+                        <br>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Flexbox 85%</div>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                
+            </article>
+
+            <div>
+                <i class="fa-solid fa-people-group"></i>
+                <aside>
+                    <h3>
+                        Work with team
+                    </h3>
+                    <p>
+                        Love working closely with team members to compete every tasks. 
+                        Always think creatively, easily have new idea and find the better solution in different way to solve problem.
+                    </p>
+
+                </aside>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <aside>
+                    <h3>
+                        Future Goal
+                    </h3>
+                    <p>
+                        Be a motivated and productive web-developer. 
+                        Learn more programing skill, web structures, and search engine optimization knowledge.
+                    </p>
+                </aside>
+            </div>
+
+
+
+<!-- <div id="resume"> -->
+            <article>
+                <h2>
+                    Download Resume
+                </h2>
+                <spam>A web developer</spam>
+                <p>
+                    with in-depth knowledge of data analysis
+                </p>
+            </article>
+        </div>
+
+        <div id="project">
+            <h2>
+                My Projects
+            </h2>
+            <article>
+                <div>
+                    <h3>
+                        Project 1
+                    </h3>
+                    <aside></aside>
+                    <div>
+                        <spam>Go to Github</spam>
+                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                    </div>
+                    
+                    <p>
+                        Learn how to use SCSS to enhance the CSS more fumular and structurful.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        Project 2
+                    </h3>
+                    <aside></aside>
+                    <div>
+                        <spam>Go to Github</spam>
+                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                    </div>
+                    <p>
+                        Learn how to set git environment and learn how to use Github to track the code.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        Project 3
+                    </h3>
+                    <aside></aside>
+                    <div>
+                        <spam>Go to Github</spam>
+                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                    </div>
+                    <p>
+                        Learn how to creave multi-device layout using SCSS.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        Project 4
+                    </h3>
+                    <aside></aside>
+                    <div>
+                        <spam>Go to Github</spam>
+                        <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a>
+                    </div>
+                    <p>
+                        Learn how to use bootstrap and awesome icon correctly in html
+                    </p>
+                </div>
+            </article>
+        </div>
+
+
+        
+
+    </main>
+    <footer id="contact">
+        <article>
+            <div>
+                <!-- <a href="#" class="fa-brands fa-linkedin"></a>
+                <a href="https://github.com/LinwenK" class="fa-brands fa-github"></a> -->
+                <i class="fa-solid fa-phone-flip"></i>
+                <a href="tel:+01 (587) 9977909">+1 (587) 9977-909</a>
+            </div>
+            <aside>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:Linwen.canada@gmail.com">Linwen.canada@gmail.com</a>
+            </aside>
+        </article>
+        <p>
+            Copyright &copy; 2022 All Rights Reserved - Linwen Tseng
+        </p>
+    </footer>
+
+</body>
+
+
+<script>
+
+    // Linwen PART show the page and button animation
+
+    document.querySelector('video').playbackRate = 0.5;
+
+    $('#project').hide();
+
+    function showP(event) {
+        $('#aboutme').fadeOut("fast");
+        $('#project').fadeIn("slow");
+    }
+
+    function showA(event) {
+        $('#project').fadeOut("fast");
+        $('#aboutme').fadeIn("slow");
+    }
+
+    function showsudoku(event) {
+        $('#level').fadeOut("slow");
+        $('#sudoku').fadeIn("slow");
+        chosenLevel = event;
+    }
+
+   
+
+    $("#playbtn").click(function () {
+        $("#playbtn").animate({
+            height: 500,
+            width: 800,
+            opacity: 0.9
+        },
+            500, "linear", function () {
+            });
+    })
+
+
+    $("#gotoeasy").click(function () {
+        $("#gotoeasy").animate({
+            height: "80%",
+            width: "80%",
+            opacity: 0.9
+        },
+            500, "linear", function () {
+            });
+    })
+
+
+    $("#gotodifficult").click(function () {
+        $("#gotodifficult").animate({
+            height: "80%",
+            width: "80%",
+            opacity: 0.9
+        },
+            500, "linear", function () {
+            });
+    })
+
+
+    $("#tryagain").click(function () {
+        $("#gotoeasy").css({
+            width: "50%",
+            height: "30%",
+            opacity: 1
+        })
+
+        $("#gotodifficult").css({
+            width: "60%",
+            height: "35%",
+            opacity: 1
+        })
+    })
+
+    $("#gohome").click(function(){
+        $('#level').fadeOut("slow");
+        $('#sudoku').fadeOut("slow");
+        $('#comp-easy').hide();
+        $('#home').fadeIn("slow");
+
+        $("#playbtn").css({
+            width: "40%",
+            height: "30%",
+            opacity: 1
+        })
+        $("#gotoeasy").css({
+            width: "50%",
+            height: "30%",
+            opacity: 1
+        })
+
+        $("#gotodifficult").css({
+            width: "60%",
+            height: "35%",
+            opacity: 1
+        })
+
+      needToStop = true;
+      clearInput();
+
+    })
+
+    // MAMIKO PART this is event for when user clicked same number
+
+    function checkSameValue(number) {
+        inputBox.removeClass('sameNumber');
+        if (number) {
+            inputBox.each(function () {
+                if ($(this).text() === number) {
+                    $(this).addClass('sameNumber');
+                }
+            })
+        }
+    }
+
+</script>
+
+</html>

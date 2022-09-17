@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------------------------------------------------*/
+
+body{
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    background-color: #DCDDDF;/*淡藍/*#F4EBE4;米黃*/
+}
+
+/*-----------------------------------------------------------*/
+
+
+header{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #DCDDDF;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav {
+    width: 60%;
+
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav li{
+    display: flex; 
+    list-style-type: none;
+    width: 80%;
+}
+
+nav a{
+    width: 100%; 
+    text-align: center;
+    text-decoration: none;
+
+    color: #2A4C65;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 3;
+
+}
+
+nav a:hover{
+
+    background-color: #2A4C65;
+    color: #DCDDDF;
+    border-radius: 50px;
+
+}
+
+footer{
+
+    background-color: #2A4C65;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: #F4EBE4;
+    letter-spacing: 5px;
+
+     
+    
+}
+
+footer a {
+    text-decoration: none;
+    color:#D4B8B4;
+    font-size: 26px;
+}   
+/************************* Home page *******************************/
+#home {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+#home .v-header {
+    position: absolute;
+    /* width: 100%; */
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+}
+
+
+/************************* about page *******************************/
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 8% 3% 3% 3%;
+    row-gap: 50px;
+}
+
+#project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 8% 3% 3% 3%;
+    row-gap: 50px;
+}
+
+
+
+.introduction{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    width: 90%;
+}
+
+.intro-photo{
+    width: 20%;
+}
+
+.intro-photo img{
+    border: 5px solid #D4B8B4;
+    background-color: #D4B8B4;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.intro-word{
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.intro-word h1{
+
+    padding-bottom: 5%;
+    color: #2A4C65;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+}
+
+
+.intro-word p{
+
+    color:#75809C;
+    line-height: 2;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+
+#level {
+    background: url("/img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#level .level-video,
+#comp-easy .level-video {
+    width: 100%;
+    display: flex;
+    padding-left: 10%;
+    flex-direction: column;
+}
+
+#level .v-header,
+#comp-easy .v-header {
+    position: absolute;
+    display: flex;
+    width: 17%;
+    object-fit: fill;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+
+#gotoeasy {
+    background: url("/img/easy_btn.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 50%;
+    height: 30%;
+    font-size: 50px;
+    padding-top: 10%;
+}
+
+#gotodifficult {
+    background: url("/img/diff_btn.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 60%;
+    height: 35%;
+    font-size: 50px;
+}
+
+
+/************************* Sudoku page *******************************/
+
+#sudoku {
+    background: url("/img/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3%;
+
+}
+
+/************************* Sudoku page - info *******************************/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    align-items:center;
+}
+
+.timer {
+    width: 200px;
+    color: #563e84;
+    font-size: 35px;
+    padding: 15px;
+    background: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #c8c9cc,
+        -2px -2px 5px #c8c9cc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Changa One', cursive;
+}
+
+.timer p {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+#sudoku .level-video {
+    width: 100%;
+    display: flex;
+
+    height: 50%;
+
+    align-items: end;
+    justify-content:center;
+
+}
+
+
+#sudoku .v-header {
+    position: absolute;
+    display: flex;
+    width: 10%;
+    object-fit: fill;
+    z-index: 1;
+    border-radius: 100%;
+    box-shadow: 8px 8px 20px #c8c9cc,
+    -8px -8px 20px #c8c9cc;
+    cursor:alias;
+}
+
+#sudoku .v-header:hover {
+    color: #7B40E7;
+    border: 8px solid #7B40E7;
+    cursor: alias;
+
+}
+
+
+
+
+/************************* Sudoku page - num-selection *******************************/
+
+.num-selection {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    column-gap: 0%;
+    align-items: center;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+.select1to9 {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 5%;
+}
+
+.select1to9 li {
+    background-color: #7B40E7;
+    border-radius: 100%;
+    color: #FFDF59;
+
+    list-style: none;
+    width: 70%;
+    height: 80%;
+    font-size: 50px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 8px 8px 20px #c8c9cc,
+        -8px -8px 20px #c8c9cc;
+
+}
+
+#noshow {
+    /* display: none; */
+    opacity: 0;
+}
+
+/************************* Sudoku page - game *******************************/
+
+.container {
+    border: 15px solid #7B40E7;
+    border-radius: 50px;
+    height: 80%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    font-size: 40px;
+    font-family: 'Viga', sans-serif;
+    box-shadow: 8px 8px 20px #c8c9cc,
+        -8px -8px 20px #c8c9cc;
+}
+
+.boxLine {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+}
+
+.box4to6 {
+    border-top: 5px solid #7B40E7;
+    border-bottom: 5px solid #7B40E7;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2,
+.box5,
+.box8 {
+    border-left: 5px solid #7B40E7;
+    border-right: 5px solid #7B40E7;
+}
+
+
+.n1to3,
+.n4to6,
+.n7to9 {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+}
+
+.n4to6 {
+    border-top: 3px solid lightgray;
+    border-bottom: 3px solid lightgray;
+}
+
+.n1,
+.n2,
+.n3,
+.n4,
+.n5,
+.n6,
+.n7,
+.n8,
+.n9 {
+    height: 100%;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.n2,
+.n5,
+.n8 {
+    border-left: 3px solid lightgray;
+    border-right: 3px solid lightgray;
+}
+
+
+
+/************************* Completed page *******************************/
+/* COMPLETED EASY */
+
+#comp-easy {
+    background: url("/img/bg.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#comp-easy .v-header {
+    width: 15%;
+}
+
+.comp-box {
+    padding-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 6%;
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+    background: rgba(255, 223, 89, 0.75);
+    box-shadow: 10px 10px 20px #c8c9cc,
+        -10px -10px 20px #c8c9cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comp-box article {
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+}
+
+.comp-box h2 {
+    padding-top: 45px;
+    text-align: center;
+    font-size: 65px;
+    letter-spacing: 2px;
+    color: #7B40E7;
+    text-shadow: 5px 5px 3px #F5F5F5;
+    font-family: 'Changa One', cursive;
+}
+
+.comp-box aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-top: 20px;
+}
+
+.comp-box .record {
+    width: 350px;
+    background-color: #F5F5F5;
+    border-radius: 50px;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.comp-box .record p {
+    font-size: 40px;
+    color: #7B40E7;
+    letter-spacing: 1.5px;
+    text-shadow: 5px 5px 5px #c8c9cc;
+    font-family: 'Changa One', cursive;
+}
+
+.comp-box .button {
+    background-color: rgba(123, 64, 231, 0.8);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: inset 5px 5px 30px #562da2,
+        inset -5px -5px 30px #a053ff;
+    display: flex;
+    flex-direction: column;
+}
+
+.comp-box .button a {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    color: #FFDF59;
+    text-shadow: 5px 5px 5px #666;
+    font-family: 'Changa One', cursive;
+    padding: 20px 15px;
+    text-decoration: none;
+
+}
+
+.comp-box .button a:hover {
+    background-color: rgba(221, 22, 28, 0.815);
+    box-shadow: inset 5px 5px 30px #666,
+        inset -5px -5px 30px #e61c05;
+    text-shadow: 3px 3px 3px #777;
+    color: #F5F5F5;
+    border-radius: 50px;
+}
+
+
+/**********JS Connection part **********/
+/* cell color change when user click empty cell */
+
+.active {
+    background-color: #7B40E7;
+    color: #FFDF59;
+}
+
+/* cell color change when user input wrong value */
+.wrong {
+
+    background: url("/img/wrong.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.num-selection li:hover {
+    background-color: #FFDF59;
+    color: #7B40E7;
+    font-weight: 900;
+    border: 8px solid #7B40E7;
+    cursor: grab;
+}
+
+
+.sameNumber {
+    background-color: #fde897;
+    color: black;
+}
