@@ -9,6 +9,7 @@
 body{
     /* font-family:Georgia, 'Times New Roman', Times, serif; */
     background-color: #DCDDDF;/*淡藍/*#F4EBE4;米黃*/
+
 }
 
 /*-----------------------------------------------------------*/
@@ -21,6 +22,8 @@ header{
     height: 8vh;
     display: flex;
     justify-content: center;
+    font-family: 'Architects Daughter', cursive;
+
 }
 
 
@@ -115,13 +118,22 @@ footer a {
 
 #project{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 8% 3% 3% 3%;
     row-gap: 50px;
+    background-color: #F4EBE4;
 }
 
+#project div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    border: 1px solid red;
+}
 
 
 .introduction{
@@ -283,14 +295,19 @@ footer a {
 }
 
 
-.education h3,.job h3{
+.education h3,.job h3, #project h3{
+    font-family: 'Architects Daughter', cursive;
+
     letter-spacing: 2px;
     font-size: 24px;
     color: #2A4C65;
+    border-bottom: 1px solid #2A4C65;
+    width: fit-content;
 
 }
 
 .education span,.job span{
+
     font-size: 18px;
     color: #2A4C65;
 
@@ -306,10 +323,32 @@ footer a {
 
 
 #resume{
+    font-family: 'Architects Daughter', cursive;
+
     height: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
     width: 90%;
+    color: #2A4C65;
+    letter-spacing: 5px;
+
+}
+
+#resume a{
+    padding: 2%;
+    background-color: #D4B8B4;
+    border-radius: 50px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: 600;
+
 }
