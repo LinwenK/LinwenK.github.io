@@ -215,7 +215,28 @@
                 </figure> 
                 <article>
 
-                        <h3>Data analyst for 5 years in Taiwan</li>
+                        <h3>Data analyst for 5 years in Taiwan</h3>
+                        <ul>
+                            <li>Intelligent Recommendation System for E-Commerce Technology
+
+                            </li>
+                            <li>Customer Event Data Relational Analysis Technology
+                            </li>
+                            <li>
+                                Multimedia Recommendation Technology
+                            </li>
+                            <li>
+                                Goods Competitiveness Analytic Technology
+                            </li>
+                            <li>
+                                Intelligence Financial Management Technology
+                            </li>
+                            <li>
+                                User Modeling Technology
+                            </li>
+
+                        </ul>
+
                 </article>
 
                 
@@ -225,22 +246,17 @@
 
 
             <div id="resume">
-                <article>
                     <h2>
                         Download Resume
                     </h2>
-                    <a href="/img/about.png" download="about.png">
+                    <a href="/img/Resume_2022.pdf" download="Resume_2022.pdf">
                         Download
-                        <!-- <img src="/img/about.png" alt="Download"> -->
                       </a>
-                </article>
             </div>
+        </div>
 
             <div id="project">
-                <h2>
-                    My Projects
-                </h2>
-                <article>
+
                     <div>
                         <h3>
                             Project 1
@@ -294,9 +310,7 @@
                             Learn how to use bootstrap and awesome icon correctly in html
                         </p>
                     </div>
-                </article>
             </div>
-        </div>
 
 
     </main>
@@ -331,110 +345,15 @@
     $('#project').hide();
 
     function showP(event) {
-        $('#aboutme').fadeOut("fast");
+        $('#aboutme').hide("fast");
         $('#project').fadeIn("slow");
     }
 
     function showA(event) {
-        $('#project').fadeOut("fast");
+        $('#project').hide("fast");
         $('#aboutme').fadeIn("slow");
     }
 
-    function showsudoku(event) {
-        $('#level').fadeOut("slow");
-        $('#sudoku').fadeIn("slow");
-        chosenLevel = event;
-    }
-
-   
-
-    $("#playbtn").click(function () {
-        $("#playbtn").animate({
-            height: 500,
-            width: 800,
-            opacity: 0.9
-        },
-            500, "linear", function () {
-            });
-    })
-
-
-    $("#gotoeasy").click(function () {
-        $("#gotoeasy").animate({
-            height: "80%",
-            width: "80%",
-            opacity: 0.9
-        },
-            500, "linear", function () {
-            });
-    })
-
-
-    $("#gotodifficult").click(function () {
-        $("#gotodifficult").animate({
-            height: "80%",
-            width: "80%",
-            opacity: 0.9
-        },
-            500, "linear", function () {
-            });
-    })
-
-
-    $("#tryagain").click(function () {
-        $("#gotoeasy").css({
-            width: "50%",
-            height: "30%",
-            opacity: 1
-        })
-
-        $("#gotodifficult").css({
-            width: "60%",
-            height: "35%",
-            opacity: 1
-        })
-    })
-
-    $("#gohome").click(function(){
-        $('#level').fadeOut("slow");
-        $('#sudoku').fadeOut("slow");
-        $('#comp-easy').hide();
-        $('#home').fadeIn("slow");
-
-        $("#playbtn").css({
-            width: "40%",
-            height: "30%",
-            opacity: 1
-        })
-        $("#gotoeasy").css({
-            width: "50%",
-            height: "30%",
-            opacity: 1
-        })
-
-        $("#gotodifficult").css({
-            width: "60%",
-            height: "35%",
-            opacity: 1
-        })
-
-      needToStop = true;
-      clearInput();
-
-    })
-
-    // MAMIKO PART this is event for when user clicked same number
-
-    function checkSameValue(number) {
-        inputBox.removeClass('sameNumber');
-        if (number) {
-            inputBox.each(function () {
-                if ($(this).text() === number) {
-                    $(this).addClass('sameNumber');
-                }
-            })
-        }
-    }
 
 </script>
 
