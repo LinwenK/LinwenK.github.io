@@ -22,7 +22,7 @@ header{
     height: 8vh;
     display: flex;
     justify-content: center;
-    font-family: 'Architects Daughter', cursive;
+    /* font-family: 'Architects Daughter', cursive; */
 
 }
 
@@ -120,19 +120,20 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 8% 3% 3% 3%;
+    padding: 3%;
     row-gap: 50px;
-    background-color: #F4EBE4;
+    column-gap: 50px;
+    background-color: #DCDDDF ;
 }
 
-#project div{
+#project .p1{
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 45%;
-    border: 1px solid red;
+    background-color: #F4EBE4;
 }
 
 
@@ -306,6 +307,10 @@ footer a {
 
 }
 
+#project h3{
+    border-bottom: 3px solid #2A4C65;
+
+}
 .education span,.job span{
 
     font-size: 18px;
