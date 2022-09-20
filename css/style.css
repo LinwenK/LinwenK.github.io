@@ -9,6 +9,7 @@
 body{
     /* font-family:Georgia, 'Times New Roman', Times, serif; */
     background-color: #DCDDDF;/*淡藍/*#F4EBE4;米黃*/
+    font-family: 'Oleo Script', cursive;
 
 }
 
@@ -22,7 +23,6 @@ header{
     height: 8vh;
     display: flex;
     justify-content: center;
-    /* font-family: 'Architects Daughter', cursive; */
 
 }
 
@@ -165,7 +165,6 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Architects Daughter', cursive;
 
 }
 
@@ -192,7 +191,7 @@ footer a {
 .intro-word span{
     /* font-family: 'Changa One', cursive; */
     /* font-family: 'Viga', sans-serif; */
-    font-family: 'Architects Daughter', cursive;
+    /* font-family: 'Architects Daughter', cursive; */
     font-weight: 900;
     font-size: 33px;
     color: #2A4C65;
@@ -208,7 +207,6 @@ footer a {
     column-gap: 40px;
     width: 80%;
     font-size: 18px;
-    font-family: 'Architects Daughter', cursive;
 
 }
 
@@ -218,13 +216,13 @@ footer a {
     line-height: 1.5;
     text-align: center;
     padding-bottom: 5%;
-    font-family: 'Architects Daughter', cursive;
     color: #2A4C65;
     font-weight: 800;
 
 }
 
 .mainskill,.softskill, .proskill{
+
     display: flex;
     flex-direction: column;
     justify-content: top;
@@ -254,10 +252,19 @@ footer a {
     -8px -8px 20px #D4B8B4; */
 
 }
-#skill .skill-content div{
+.mainskill .skill-content div{
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 20px;
+    font-family: 'Architects Daughter', cursive;
+
+}
+.softskill .skill-content div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: 'Architects Daughter', cursive;
+
 }
 #school, #job{
     width: 30%;
@@ -281,6 +288,40 @@ footer a {
     border-radius: 50%;
 }
 
+.proskill .skill-content {
+    width: 100%;
+    
+
+}
+.proskill .skill-content div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+    column-gap: 40px;
+    color: #2A4C65;
+    letter-spacing: 5px;
+    width: 100%;
+    row-gap: 10px;
+    font-family: 'Architects Daughter', cursive;
+
+}
+
+.proskill a{
+    padding: 2%;
+    background-color: #D4B8B4;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: 600;
+
+}
 
 
 
@@ -292,18 +333,21 @@ footer a {
     column-gap: 10px;
     width: 45%;
     line-height: 1.5;
+    font-family: 'Architects Daughter', cursive;
+    color:gray;
 
 }
 
 
 .education h3,.job h3, #project h3{
-    font-family: 'Architects Daughter', cursive;
 
     letter-spacing: 2px;
     font-size: 24px;
     color: #2A4C65;
     border-bottom: 1px solid #2A4C65;
     width: fit-content;
+    font-family: 'Oleo Script', cursive;
+
 
 }
 
@@ -315,8 +359,11 @@ footer a {
 
     font-size: 18px;
     color: #2A4C65;
+    font-family: 'Oleo Script', cursive;
 
 }
+
+
 
 .education article, .job article{
     width: 80%;
@@ -328,7 +375,6 @@ footer a {
 
 
 #resume{
-    font-family: 'Architects Daughter', cursive;
 
     height: 50%;
     display: flex;
@@ -343,7 +389,9 @@ footer a {
 }
 
 #resume a{
-    padding: 2%;
+    font-family: 'Architects Daughter', cursive;
+
+    padding: 1% 2% 1% 2%;
     background-color: #D4B8B4;
     border-radius: 50px;
     width: fit-content;
