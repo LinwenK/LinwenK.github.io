@@ -124,18 +124,28 @@ footer a {
     row-gap: 50px;
     column-gap: 50px;
     background-color: #DCDDDF ;
+
 }
 
 #project .p1{
+    padding: 5% 0 5% 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 45%;
+    height: 80%;
     background-color: #F4EBE4;
+    border-radius: 20px;
+    row-gap: 10px;
 }
-
+/* height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 40px;
+width: 90%; */
 
 .introduction{
     height: 50%;
@@ -146,6 +156,26 @@ footer a {
     width: 90%;
 }
 
+.p-photo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+
+}
+
+.p-photo img{
+    border: 5px solid #D4B8B4;
+    background-color: #D4B8B4;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
 .intro-photo{
     width: 20%;
 }
@@ -155,9 +185,8 @@ footer a {
     background-color: #D4B8B4;
     position: relative;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
 }
-
 .intro-word{
 
     height: 100%;
@@ -335,6 +364,7 @@ footer a {
     line-height: 1.5;
     font-family: 'Architects Daughter', cursive;
     color:gray;
+    letter-spacing: 2px;
 
 }
 
@@ -351,8 +381,23 @@ footer a {
 
 }
 
+.job li{
+    padding-bottom: 10px;
+}
 #project h3{
     border-bottom: 3px solid #2A4C65;
+    font-family: 'Architects Daughter', cursive;
+
+}
+#project p {
+    /* font-family: 'Architects Daughter', cursive; */
+
+    padding: 0% 5% 0% 5%;
+    text-align: center;
+    font-size: 18px;
+}
+#project span{
+    font-family: 'Architects Daughter', cursive;
 
 }
 .education span,.job span{
